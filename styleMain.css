@@ -24,6 +24,9 @@
 
 body
 {
+    padding: 0;
+    margin: 0;
+
     cursor: default;
 }
 
@@ -164,6 +167,93 @@ body
 {
     font-family: 'Noto Kufi Arabic', sans-serif;
     font-size: 1.25em;
+}
+
+.global-footer
+{
+    background-color: purple;
+
+    padding: 0;
+    margin: 0;
+
+    width: 100%;
+    height: 300px;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-divs
+{
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    color: white;
+}
+
+.footer-div-MMK-logo
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+    width: 25%;
+}
+
+.footer-div-UsefulLinks
+{
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.text-title-UsefulLinks
+{
+    font-size: 1.7rem;
+}
+
+.unorderedlist-UsefulLinks
+{
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+}
+
+.unorderedlist-UsefulLinks a
+{
+    text-decoration: none;
+
+    color: white;
+}
+
+.list-UsefulLinks-items
+{
+    text-decoration: none;
+
+    padding: 0;
+    margin: 0;
+}
+
+.footer-text-copyright
+{
+    display: flex;
+
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    align-content: end;
+    justify-items: end;
+
+    color: white;
+
+    margin: 0 200px 0 0;
+}
+
+.text-copyright
+{
+    
 }
 
 /* Mobile device: Small (768px) */
