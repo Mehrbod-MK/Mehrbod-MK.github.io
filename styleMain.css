@@ -158,11 +158,6 @@ body
     font-size: 1.75rem;
 }
 
-.main-body-title-text
-{
-    
-}
-
 .general-text
 {
     font-family: 'Noto Kufi Arabic', sans-serif;
@@ -249,11 +244,6 @@ body
     color: white;
 
     margin: 0 200px 0 0;
-}
-
-.text-copyright
-{
-    
 }
 
 /* Mobile device: Small (768px) */
