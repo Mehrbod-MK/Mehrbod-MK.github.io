@@ -1,0 +1,188 @@
+@keyframes animation_Rectangle1
+{
+    from
+    {
+        padding: 20% 30% 20% 30%;
+    }
+    to
+    {
+        padding: 10% 20% 30% 20%;
+    }
+}
+
+@keyframes animation_Rectangle2
+{
+    from
+    {
+        padding: 20% 30% 20% 30%;
+    }
+    to
+    {
+        padding: 10% 20% 30% 20%;
+    }
+}
+
+body
+{
+    cursor: default;
+}
+
+.menu-main
+{
+    width: 100%;
+}
+
+.menu-main-div
+{
+    display: flex;
+
+    margin: 40px;
+
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.menu-main-items
+{
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 1.25em;
+    text-decoration: none;
+
+    transition: all 0.5s;
+}
+
+.menu-main-items:hover
+{
+    background: yellow;
+    cursor: pointer;
+
+    border-width: 2px;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-style: solid;
+    padding: 10px;
+
+    border-radius: 15px;
+}
+
+.main-body
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.main-body-divs
+{
+    /* TODO: Remove. */
+    /* border: 1px solid black; */
+
+    width: 50%;
+    height: 400px;
+
+    margin: 10px;
+
+    position: relative;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.main-body-rectangles
+{
+    border-radius: 30px;
+
+    position: absolute;
+
+    animation-timing-function: ease-in-out;
+}
+
+.main-body-rectangle1
+{
+    padding: 20% 30% 20% 30%;
+    
+    animation-duration: 4s;
+    animation-name: animation_Rectangle1;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+    background-color: rgba(132, 41, 150, 0.7);
+
+    transition: all 0.5s;
+}
+
+.main-body-rectangle2
+{
+    padding: 20% 30% 20% 30%;
+
+    animation-duration: 5s;
+    animation-name: animation_Rectangle2;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+    transform: translate(-5%, 5%);
+
+    background-color: rgba(0, 0, 255, 0.30);
+
+    transition: all 0.5s;
+}
+
+.main-body-div2
+{
+    justify-content: start;
+}
+
+.main-body-texts-div
+{
+    display: flex;
+    flex-direction: column;
+
+    margin: 20px;
+}
+
+.main-body-decoratiove-rect1
+{
+    width: 1%;
+    height: 80%;
+
+    background-color: rgba(132, 41, 150, 0.6);
+}
+
+.title-text
+{
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 700;
+
+    font-size: 1.75rem;
+}
+
+.main-body-title-text
+{
+    
+}
+
+.general-text
+{
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 1.25em;
+}
+
+/* Mobile device: Small (768px) */
+@media screen and (max-width: 768px) {
+    .menu-main-div
+    {
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+}
+
+.main-body-rectangle1:hover
+{
+    background-color: yellow;
+}
+
+.main-body-rectangle2:hover
+{
+    background-color: purple;
+}
