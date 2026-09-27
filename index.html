@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mehrbod Molla Kazemi</title>
+  <meta name="description" content="Personal website of Mehrbod MK: projects, achievements, and open-source work from GitHub." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== Navbar ===== -->
+  <header class="navbar" id="navbar">
+    <nav class="container navbar-inner" aria-label="Main navigation">
+      <a href="#home" class="logo" aria-label="Go to top">
+        <span class="logo-mark">&lt;/&gt;</span>&nbsp;Mehrbod-MK
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#github">GitHub</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="nav-divider" aria-hidden="true"></li>
+        <li>
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark / light theme" title="Toggle theme">
+            <span class="theme-icon" id="theme-icon">☀️</span>
+          </button>
+        </li>
+      </ul>
+      <button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ===== Hero ===== -->
+    <section class="hero section" id="home">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-hello reveal">Hi there, I'm</p>
+          <h1 class="hero-name reveal">Mehrbod&nbsp;Kazemi<span class="accent">.</span></h1>
+          <p class="hero-role reveal">
+            <span id="typed-text"></span><span class="cursor" aria-hidden="true">|</span>
+          </p>
+          <p class="hero-tagline reveal">
+            I'm a professional C#/.NET Core/C++ developer who loves to implement complex software solutions and systems.
+          </p>
+          <div class="hero-cta reveal">
+            <a class="btn btn-primary" href="#projects">View my projects</a>
+            <a class="btn btn-ghost" id="hero-github-link" href="https://github.com/Mehrbod-MK" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+              GitHub profile
+            </a>
+          </div>
+        </div>
+        <div class="hero-stats reveal" id="hero-stats">
+          <div class="stat-card">
+            <span class="stat-value" id="stat-repos">–</span>
+            <span class="stat-label">Public repos</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value" id="stat-followers">–</span>
+            <span class="stat-label">Followers</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value" id="stat-stars">–</span>
+            <span class="stat-label">Total stars</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value" id="stat-forks">–</span>
+            <span class="stat-label">Total forks</span>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-hint" aria-hidden="true">↓</div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title reveal">About me</h2>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              Hello! I'm <strong>Mehrbod Kazemi</strong>, a developer who enjoys turning ideas
+              into working software. I care about clean code, good documentation,
+              and building tools that other people actually find useful.
+            </p>
+            <p>
+              I'm a professional C#/.NET/C++ programmer.
+            </p>
+            <ul class="about-facts">
+              <li>📍 Based in Tehran, Iran</li>
+              <li>💼 Currently: <span class="editable">working for IT industry.</span></li>
+              <li>🌱 Learning: <span class="editable">Rust, DirectX</span></li>
+              <li>⚡ Fun fact: <span class="editable">I love playing piano and swimming in my spare time!</span></li>
+            </ul>
+          </div>
+          <div class="about-code reveal" aria-label="Developer summary in a code snippet">
+            <div class="code-header">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span class="code-title">developer.js</span>
+            </div>
+<pre><code><span class="tok-kw">const</span> <span class="tok-var">me</span> = {
+  name: <span class="tok-str">'Mehrbod Kazemi'</span>,
+  role: <span class="tok-str">'C#/.NET/C++ Developer'</span>,
+  languages: [<span class="tok-str">'C#'</span>, <span class="tok-str">'C++'</span>],
+  loves: [<span class="tok-str">'open source'</span>, <span class="tok-str">'clean code'</span>],
+  <span class="tok-fn">hireable</span>: <span class="tok-kw">false</span>,
+};</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <h2 class="section-title reveal">Skills &amp; tools</h2>
+        <div class="skills-grid" id="skills-grid">
+          <!-- Populated from JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects (GitHub API) ===== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title reveal">Projects</h2>
+        <p class="section-subtitle reveal">Pinned work, pulled live from the GitHub API.</p>
+
+        <div class="filter-bar reveal" id="filter-bar" role="group" aria-label="Filter projects by language">
+          <!-- Filter buttons injected by JS -->
+        </div>
+
+        <div class="projects-grid" id="projects-grid" aria-live="polite">
+          <div class="loading" id="projects-loading">
+            <span class="spinner" aria-hidden="true"></span>
+            <p>Loading projects from GitHub…</p>
+          </div>
+        </div>
+        <noscript>
+          <p class="section-subtitle">JavaScript is disabled — please visit
+            <a href="https://github.com/Mehrbod-MK" target="_blank" rel="noopener noreferrer">my GitHub profile</a>
+            to see my projects.</p>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- ===== Achievements ===== -->
+    <section class="section section-alt" id="achievements">
+      <div class="container">
+        <h2 class="section-title reveal">Achievements</h2>
+        <p class="section-subtitle reveal">Milestones I'm proud of.</p>
+        <div class="achievements-grid" id="achievements-grid">
+          <!-- Populated from JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GitHub section ===== -->
+    <section class="section" id="github">
+      <div class="container">
+        <h2 class="section-title reveal">On GitHub</h2>
+        <div class="github-panel reveal" id="github-panel">
+          <div class="github-languages">
+            <h3>Language breakdown</h3>
+            <div class="lang-bar" id="lang-bar" role="img" aria-label="Distribution of languages across my public repositories"></div>
+            <div class="lang-legend" id="lang-legend"></div>
+          </div>
+          <div class="github-contributions">
+            <h3>Live activity</h3>
+            <div class="gh-contrib-wrapper" id="gh-contrib-wrapper">
+              <img
+                id="gh-streak"
+                src="https://streak-stats.demolab.com?user=Mehrbod-MK&hide_border=true&locale=en"
+                alt="GitHub streak statistics" loading="lazy" />
+              <img
+                id="gh-top-langs"
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mehrbod-MK&layout=compact&hide_border=true"
+                alt="Most used languages" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section section-alt" id="contact">
+      <div class="container contact-inner">
+        <h2 class="section-title reveal">Get in touch</h2>
+        <p class="section-subtitle reveal">
+          Want to collaborate, ask a question, or just say hi? My inbox is open.
+        </p>
+        <div class="contact-links reveal">
+          <a class="btn btn-primary" id="contact-email" href="mailto:mehrbodmollakazemi81@gmail.com">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/></svg>
+            Email me
+          </a>
+          <a class="btn btn-ghost" href="https://github.com/Mehrbod-MK" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+            GitHub
+          </a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/mehrbod-m-kazemi-8b4124241" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14Zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79ZM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68Zm1.39 9.94v-8.37H5.5v8.37h2.77Z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Mehrbod Molla Kazemi - All rights reserved.</p>
+      <a href="#home" class="back-to-top" aria-label="Back to top">↑ Top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
